@@ -59,7 +59,7 @@ github "iterm2",          "1.0.1"
 github "wget",            "1.0.0"
 
 github "sublime_text_3",  "1.2.1", :repo => "jhubert/puppet-sublime_text_3"
-github "pathfinder",      :repo => "bradhouse/puppet-pathfinder"
+github "pathfinder",      "1.0.0", :repo => "bradhouse/puppet-pathfinder"
 github "intellij",        "1.1.2"
 
 github "virtualbox",      "1.0.1"
