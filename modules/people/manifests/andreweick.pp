@@ -6,6 +6,14 @@ class people::andreweick {
 	
 	include sublime_text_3
 
+
+  $my_home  = "/Users/${::luser}"
+  $projects = "${my_home}/code"
+
+  file { $projects:
+    ensure => directory,
+  }
+
 	$dotfiles = "${projects}/dotfiles"
 
   repository { $dotfiles:
