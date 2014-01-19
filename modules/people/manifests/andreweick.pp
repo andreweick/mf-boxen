@@ -2,11 +2,15 @@ class people::andreweick {
 	include iterm2::stable
 #	include iterm2::colors::solarized_light
 
-#	include pathfinder
-	
+	include zsh
+	include dropbox
+	include chrome
+  include pathfinder
 	include sublime_text_3
-
-
+	include kaleidoscope 
+	include gitx
+	include dropbox
+	
   $my_home  = "/Users/${::luser}"
   $projects = "${my_home}/code"
 
