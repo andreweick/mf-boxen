@@ -12,8 +12,8 @@ class people::andreweick {
     notify  => Exec['andreweick-make-dotfiles'],
   }
 
-  # exec { 'andreweick-make-dotfiles':
-  #   command     => "cd ${dotfiles} && make",
-  #   refreshonly => true,
-  # }
+  exec { 'andreweick-make-dotfiles':
+    command     => "cd ${dotfiles} && make",
+    refreshonly => true,
+  }
 }
