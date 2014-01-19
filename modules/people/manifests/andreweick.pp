@@ -10,7 +10,9 @@ class people::andreweick {
 	include kaleidoscope 
 	include gitx
 	include dropbox
-	
+	include alfred
+	include imagemagick
+
   $my_home  = "/Users/${::luser}"
   $projects = "${my_home}/code"
 
