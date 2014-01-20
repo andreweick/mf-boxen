@@ -71,7 +71,7 @@ github "alfred",          "1.1.7"
 github "vmware_fusion",   "1.1.0"
 github "textexpander",    "1.0.1"
 
-github "sublime_text_3",  "1.0.2",  :repo => "jozefizo/puppet-sublime_text_3"
+github "sublime_text_3",  "1.0.2",  :repo => "jozefizso/puppet-sublime_text_3"
 github "pathfinder",      "0.0.1",  :repo => "bradhouse/puppet-pathfinder"
 github "gitx",            "1.0.0",  :repo => "erivello/puppet-gitx"
 github "kaleidoscope",    "1.0.4",  :repo => "andreweick/puppet-kaleidoscope"
