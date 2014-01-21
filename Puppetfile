@@ -64,7 +64,7 @@ github "intellij",        "1.4.0"
 
 github "chrome",          "1.1.2"
 github "dropbox",         "1.2.0"
-github "firefox",         "1.1.17"
+github "firefox",         "1.1.7"
 github "osx",             "2.2.2"
 github "zsh",             "1.0.0"
 github "alfred",          "1.1.7"
