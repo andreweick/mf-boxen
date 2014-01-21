@@ -56,20 +56,21 @@ github "xquartz",    "1.1.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 github "imagemagick",     "1.2.1"
-github "iterm2",          "1.0.4"
+github "iterm2",          "1.0.6"
 github "wget",            "1.0.0"
 github "clojure",         "1.2.0"
 
-github "intellij",        "1.1.2"
+github "intellij",        "1.4.0"
 
-github "chrome",          "1.0.0"
-github "dropbox",         "1.0.0"
-github "firefox",         "1.0.5"
-github "osx",             "1.0.0"
+github "chrome",          "1.1.2"
+github "dropbox",         "1.2.0"
+github "firefox",         "1.1.17"
+github "osx",             "2.2.2"
 github "zsh",             "1.0.0"
 github "alfred",          "1.1.7"
 github "vmware_fusion",   "1.1.0"
 github "textexpander",    "1.0.1"
+github "cloudapp",        "1.0.0"
 
 github "sublime_text_3",  "1.0.2",  :repo => "jozefizso/puppet-sublime_text_3"
 github "pathfinder",      "0.0.1",  :repo => "bradhouse/puppet-pathfinder"
