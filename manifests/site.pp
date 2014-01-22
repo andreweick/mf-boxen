@@ -57,7 +57,7 @@ node default {
   # include nginx
   include git
   include hub
-  include hub::alias_hub_to_git => false
+#  include hub::alias_hub_to_git => false
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -78,7 +78,7 @@ node default {
   package {
     [
       'ack',
-      'cowsay'
+      'wget'
     ]:
   }
 }

@@ -1,4 +1,9 @@
 class people::andreweick {
+  packages{
+    'lame': ;
+    'youtube-dl': ;
+    'cowsay': ;
+  }
   include iterm2::stable
 # include iterm2::colors::solarized_light
 
@@ -24,7 +29,7 @@ class people::andreweick {
   # }
 
 
-
+  # Install my dotfiles
   $my_home  = "/Users/${::luser}"
   $projects = "${my_home}/code"
 
