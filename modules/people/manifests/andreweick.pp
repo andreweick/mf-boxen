@@ -6,7 +6,7 @@ class people::andreweick {
   include dropbox
   include chrome
   include pathfinder
-# include kaleidoscope 
+#  include kaleidoscope 
   include gitx
   include dropbox
   include alfred
@@ -17,6 +17,14 @@ class people::andreweick {
   include sublime_text_3::package_control
   sublime_text_3::package { 'GitGutter':
     source => 'jisaacks/GitGutter'
+  }
+
+  git::config::global { 'user.email':
+    value => 'maeick@missionfocus.com',
+  }
+
+  git::config::global { 'user.name':
+    value => 'And Eick',
   }
 
   # Install my dotfiles
