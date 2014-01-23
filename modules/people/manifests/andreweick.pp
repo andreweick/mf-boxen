@@ -19,13 +19,15 @@ class people::andreweick {
     source => 'jisaacks/GitGutter'
   }
 
-  git::config::global { 'user.email':
-    value => 'maeick@missionfocus.com',
+  git::config::global { 
+    'user.email':
+      value => 'maeick@missionfocus.com';
+    'user.name':
+      value => 'Andrew Eick';
+    'push.default':
+      value => 'matching';
   }
 
-  git::config::global { 'user.name':
-    value => 'And Eick',
-  }
 
   # Install my dotfiles
   $my_home  = "/Users/${::luser}"
