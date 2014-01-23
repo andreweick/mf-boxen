@@ -57,6 +57,10 @@ node default {
   # include nginx
   include git
   include hub
+  class {
+    'hub':
+     alias_hub_to_git => false
+  }
 #  include hub::alias_hub_to_git => false
 
   # fail if FDE is not enabled
