@@ -61,7 +61,7 @@ github "wget",            "1.0.0"
 github "clojure",         "1.2.0"
 
 github "intellij",        "1.4.0"
-
+github "gitx",            "1.2.0"
 github "chrome",          "1.1.2"
 github "dropbox",         "1.2.0"
 github "firefox",         "1.1.7"
@@ -73,6 +73,5 @@ github "textexpander",    "1.0.1"
 github "cloudapp",        "1.0.0"
 
 github "sublime_text_3",  "1.0.2",  :repo => "jozefizso/puppet-sublime_text_3"
-github "gitx",            "1.0.0",  :repo => "erivello/puppet-gitx"
 github "kaleidoscope",    "1.0.4",  :repo => "andreweick/puppet-kaleidoscope"
 github "font",            "1.0.3",  :repo => "robbiegill/puppet-font"
