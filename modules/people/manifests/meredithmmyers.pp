@@ -1,4 +1,4 @@
-class people::andreweick {
+class people::meredithmmyers {
 	include iterm2::stable
 #	include iterm2::colors::solarized_light
 
