@@ -1,13 +1,7 @@
 class people::andreweick {
-  packages{
-    'lame': ;
-    'youtube-dl': ;
-    'cowsay': ;
-  }
   include iterm2::stable
 # include iterm2::colors::solarized_light
 
-<<<<<<< HEAD
   include zsh
   include dropbox
   include chrome
@@ -36,12 +30,12 @@ class people::andreweick {
   $dotfiles = "${projects}/dotfiles"
 
   repository { $dotfiles:
-    source  => 'missionfocus/dotfiles',
+    source  => 'andreweick/dotfiles',
     require => File[$projects],
-    notify  => Exec['missionfocus-make-dotfiles'],
+    notify  => Exec['andreweick-make-dotfiles'],
   }
 
-  exec { 'missionfocus-make-dotfiles':
+  exec { 'andreweick-make-dotfiles':
     command     => "cd ${dotfiles} && make",
     refreshonly => true,
   }
