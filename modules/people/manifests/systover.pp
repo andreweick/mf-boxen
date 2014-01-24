@@ -8,6 +8,7 @@ class people::andreweick {
 	include gitx
 	include imagemagick
 
+	include osx::disable_app_quarantine
 	include sublime_text_3
 	include sublime_text_3::package_control
 	sublime_text_3::package { 'Theme - Soda':

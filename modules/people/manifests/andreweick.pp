@@ -14,6 +14,12 @@ class people::andreweick {
   include font::source-code-pro
   include mactex::full
 
+  #OSX
+  osx::recovery_message { 'If this Mac is found, please call 123-456-7890': }
+  include osx::keyboard::capslock_to_control
+  include osx::global::expand_save_dialog  
+
+
   include sublime_text_3
   include sublime_text_3::package_control
   sublime_text_3::package { 'GitGutter':
