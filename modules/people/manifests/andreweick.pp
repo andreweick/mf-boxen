@@ -12,6 +12,7 @@ class people::andreweick {
   include alfred
   include imagemagick
   include font::source-code-pro
+  include mactex::full
 
   include sublime_text_3
   include sublime_text_3::package_control
