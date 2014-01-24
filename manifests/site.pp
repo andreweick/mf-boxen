@@ -70,9 +70,9 @@ node default {
   include nodejs::v0_10
 
   # default ruby versions
-  include ruby::1_9_2
-  include ruby::1_9_3
-  include ruby::2_0_0
+  include ruby::version { '1.9.2': }
+  include ruby::version { '1.9.3': }
+  include ruby::version { '2.0.0': }
 
   # common, useful packages
   package {
