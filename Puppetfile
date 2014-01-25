@@ -59,7 +59,7 @@ github "iterm2",          "1.0.6"
 github "wget",            "1.0.0"
 github "clojure",         "1.2.0"
 
-github "intellij",        "1.4.0"
+# github "intellij",        "1.4.0"
 github "gitx",            "1.2.0"
 github "chrome",          "1.1.2"
 github "dropbox",         "1.2.0"
