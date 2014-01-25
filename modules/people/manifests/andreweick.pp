@@ -12,7 +12,7 @@ class people::andreweick {
   include alfred
   include imagemagick
   include font::source-code-pro
-  include mactex::full
+#  include mactex::full
 
   #OSX
   osx::recovery_message { 'If this Mac is found, please call 123-456-7890': }
