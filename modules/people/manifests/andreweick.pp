@@ -6,7 +6,7 @@ class people::andreweick {
   include dropbox
   include chrome
   include pathfinder
-#  include kaleidoscope 
+  include kaleidoscope 
   include gitx
   include dropbox
   include alfred
@@ -15,9 +15,9 @@ class people::andreweick {
 #  include mactex::full
 
   #OSX
-  osx::recovery_message { 'If this Mac is found, please call 703.291.6720': }
-  include osx::keyboard::capslock_to_control
-  include osx::global::expand_save_dialog  
+  # osx::recovery_message { 'If this Mac is found, please call 703.291.6720': }
+  # include osx::keyboard::capslock_to_control
+  # include osx::global::expand_save_dialog  
 
 
   include sublime_text_3
