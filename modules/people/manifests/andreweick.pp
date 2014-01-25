@@ -15,7 +15,7 @@ class people::andreweick {
 #  include mactex::full
 
   #OSX
-  osx::recovery_message { 'If this Mac is found, please call 123-456-7890': }
+  osx::recovery_message { 'If this Mac is found, please call 703.291.6720': }
   include osx::keyboard::capslock_to_control
   include osx::global::expand_save_dialog  
 
