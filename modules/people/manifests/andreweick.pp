@@ -6,15 +6,14 @@ class people::andreweick {
   include zsh
   include imagemagick
   include font::source-code-pro
-
-  # include pathfinder 
-  # include kaleidoscope 
-  # include mactex::full
+  # include vmware_fusion
+  include pathfinder 
+  include mactex::full
 
   #OSX
-  # osx::recovery_message { 'If this Mac is found, please call 703.291.6720': }
-  # include osx::keyboard::capslock_to_control
-  # include osx::global::expand_save_dialog  
+  osx::recovery_message { 'If this Mac is found, please email business@missionfocus.com or call 703.291.6720': }
+  include osx::keyboard::capslock_to_control
+  include osx::global::expand_save_dialog  
 
   include iterm2::stable
 # include iterm2::colors::solarized_light
