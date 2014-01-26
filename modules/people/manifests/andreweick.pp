@@ -1,24 +1,23 @@
 class people::andreweick {
-  include iterm2::stable
-# include iterm2::colors::solarized_light
-
-  include zsh
-  include dropbox
-  include chrome
-  include pathfinder
-#  include kaleidoscope 
   include gitx
   include dropbox
+  include chrome
   include alfred
+  include zsh
   include imagemagick
   include font::source-code-pro
-#  include mactex::full
+
+  # include pathfinder 
+  # include kaleidoscope 
+  # include mactex::full
 
   #OSX
   # osx::recovery_message { 'If this Mac is found, please call 703.291.6720': }
   # include osx::keyboard::capslock_to_control
   # include osx::global::expand_save_dialog  
 
+  include iterm2::stable
+# include iterm2::colors::solarized_light
 
   include sublime_text_3
   include sublime_text_3::package_control
