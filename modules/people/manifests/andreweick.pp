@@ -6,7 +6,7 @@ class people::andreweick {
   include dropbox
   include chrome
   include pathfinder
-  include kaleidoscope 
+#  include kaleidoscope 
   include gitx
   include dropbox
   include alfred
