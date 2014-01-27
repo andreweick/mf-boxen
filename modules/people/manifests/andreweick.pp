@@ -1,4 +1,5 @@
 class people::andreweick {
+  include module_data
   include hub
   include gitx
   include dropbox
