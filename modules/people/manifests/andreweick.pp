@@ -7,6 +7,7 @@ class people::andreweick {
   include font::source-code-pro
   include vmware_fusion
   include textexpander
+  include mactex
 
   include iterm2::stable
 # include iterm2::colors::solarized_light
@@ -73,6 +74,6 @@ class people::andreweick {
   # Uses the osx_chsh type out of boxen/puppet-osx
   osx_chsh { $my_username:
     shell   => '/opt/boxen/homebrew/bin/zsh',
-    require => Package['zsh'],
+    require => Package['zsh']
   }
 }
