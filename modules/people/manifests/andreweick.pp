@@ -6,6 +6,7 @@ class people::andreweick {
   include alfred
   include font::source-code-pro
   include vmware_fusion
+  include textexpander
 
   include iterm2::stable
 # include iterm2::colors::solarized_light
