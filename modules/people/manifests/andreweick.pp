@@ -1,19 +1,12 @@
 class people::andreweick {
+  include hub
   include gitx
-  # include dropbox
-  # include chrome
-  # include alfred
+  include dropbox
+  include chrome
+  include alfred
   include zsh
-  # include imagemagick
   include font::source-code-pro
-  # include vmware_fusion
-  # include pathfinder 
-  # include mactex::full
-
-  #OSX
-  # osx::recovery_message { 'If this Mac is found, please email business@missionfocus.com or call 703.291.6720': }
-  # include osx::keyboard::capslock_to_control
-  # include osx::global::expand_save_dialog  
+  include vmware_fusion
 
   include iterm2::stable
 # include iterm2::colors::solarized_light
@@ -22,6 +15,22 @@ class people::andreweick {
   include sublime_text_3::package_control
   sublime_text_3::package { 'GitGutter':
     source => 'jisaacks/GitGutter'
+  }
+
+  $hombrew_packages = [
+    'ack',
+    'wget',
+    'curl',
+    'zsh'
+    'nmap',
+    'imagemagick'    
+  ]
+
+  package { $hombrew_packages: }
+
+  package { 'Pandoc':
+    source    => 'https://pandoc.googlecode.com/files/pandoc-1.12.1-1.dmg'
+    provider  => pkgdmg,
   }
 
   git::config::global { 
