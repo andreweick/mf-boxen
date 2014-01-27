@@ -4,9 +4,10 @@ class people::andreweick {
   include dropbox
   include chrome
   include alfred
-  include zsh
   include font::source-code-pro
   include vmware_fusion
+  include textexpander
+  include mactex
 
   include iterm2::stable
 # include iterm2::colors::solarized_light
@@ -21,15 +22,15 @@ class people::andreweick {
     'ack',
     'wget',
     'curl',
-    'zsh'
     'nmap',
+    'zsh',
     'imagemagick'    
   ]
 
   package { $hombrew_packages: }
 
   package { 'Pandoc':
-    source    => 'https://pandoc.googlecode.com/files/pandoc-1.12.1-1.dmg'
+    source    => 'https://pandoc.googlecode.com/files/pandoc-1.12.1-1.dmg',
     provider  => pkgdmg,
   }
 
@@ -46,6 +47,7 @@ class people::andreweick {
   # Install my dotfiles
   $my_home  = "/Users/${::luser}"
   $projects = "${my_home}/code"
+  $my_username = "maeick"
 
   file { $projects:
     ensure => directory,
@@ -63,4 +65,17 @@ class people::andreweick {
     command     => "cd ${dotfiles} && make",
     refreshonly => true,
   }
+
+  ###############
+  # User Config #
+  ###############
+
+  # Changes the default shell to the zsh version we get from Homebrew
+  # Uses the osx_chsh type out of boxen/puppet-osx
+  osx_chsh { $my_username:
+    shell   => '/opt/boxen/homebrew/bin/zsh',
+    require => Package['zsh']
+  }
+
+  osx::recovery_message { 'If this laptop found, please contact business@missionfocus.com or call 703.291.6720' }
 }
