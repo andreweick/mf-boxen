@@ -57,7 +57,6 @@ node default {
   # include dnsmasq
   # include nginx
   include git
-  include hub
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -73,12 +72,4 @@ node default {
   include ruby
   ruby::version { '1.9.3': }
   ruby::version { '2.0.0': }
-
-  # common, useful packages
-  package {
-    [
-      'ack',
-      'wget'
-    ]:
-  }
 }
