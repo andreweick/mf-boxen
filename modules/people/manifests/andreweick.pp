@@ -7,7 +7,7 @@ class people::andreweick {
   include font::source-code-pro
   include vmware_fusion
   include textexpander
-  include mactex
+  include mactex::full
 
   include iterm2::stable
 # include iterm2::colors::solarized_light
@@ -77,5 +77,5 @@ class people::andreweick {
     require => Package['zsh']
   }
 
-  osx::recovery_message { 'If this laptop found, please contact business@missionfocus.com or call 703.291.6720' }
+  osx::recovery_message { 'If this laptop found, please contact business@missionfocus.com or call 703.291.6720': }
 }
