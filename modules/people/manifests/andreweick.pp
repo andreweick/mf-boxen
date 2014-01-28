@@ -24,6 +24,7 @@ class people::andreweick {
     'curl',
     'nmap',
     'zsh',
+    'sitespeedio/sitespeedio/sitespeed.io',
     'imagemagick'    
   ]
 
