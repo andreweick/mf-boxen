@@ -8,7 +8,6 @@ class people::andreweick {
   include vmware_fusion
   include textexpander
   include mactex::full
-  include osx
 
   include iterm2::stable
 # include iterm2::colors::solarized_light
