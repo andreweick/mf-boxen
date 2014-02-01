@@ -31,8 +31,8 @@ class people::andreweick {
     source => 'noahcoad/open-url'
   }
 
-  sublime_text_3::package { 'Sublime-TableEditor':
-    source => 'vkocubinsky/Sublime-TableEditor'
+  sublime_text_3::package { 'SublimeTableEditor':
+    source => 'vkocubinsky/SublimeTableEditor'
   }
 
   $hombrew_packages = [
