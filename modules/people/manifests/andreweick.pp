@@ -19,6 +19,22 @@ class people::andreweick {
     source => 'jisaacks/GitGutter'
   }
 
+  sublime_text_3::package { 'PlainTasks':
+    source => 'aziz/PlainTasks'
+  }
+
+  sublime_text_3::package { 'MarkdownEditing':
+    source => 'SublimText-Markdown/MarkdownEditing'
+  }
+
+  sublime_text_3::package { 'open-url':
+    source => 'noahcoad/open-url'
+  }
+
+  sublime_text_3::package { 'Sublime-TableEditor':
+    source => 'vkocubinsky/Sublime-TableEditor'
+  }
+
   $hombrew_packages = [
     'ack',
     'wget',
@@ -30,6 +46,7 @@ class people::andreweick {
   ]
 
   package { $hombrew_packages: }
+
 
   package { 'Pandoc':
     source    => 'https://pandoc.googlecode.com/files/pandoc-1.12.1-1.dmg',
