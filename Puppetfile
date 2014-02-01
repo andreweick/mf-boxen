@@ -71,9 +71,9 @@ github "vmware_fusion",   "1.1.0"
 github "textexpander",    "1.0.1"
 
 github "sublime_text_3",  "1.0.2",  :repo => "jozefizso/puppet-sublime_text_3"
-github "font",            "1.0.3",  :repo => "robbiegill/puppet-font"
 github "pathfinder",      "0.0.1",  :repo => "bradhouse/puppet-pathfinder"
 github "mactex",          "0.1.0",  :repo => "omegaice/puppet-mactex"
 
 github "hub",             "1.3.0",  :repo => "andreweick/puppet-hub"
+github "font",            "1.0.3",  :repo => "andreweick/puppet-font"
 github "osx" ,            "2.2.2",  :repo => "andreweick/puppet-osx"
