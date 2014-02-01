@@ -56,6 +56,7 @@ github "module-data","0.0.1", :repo => "ripienaar/puppet-module-data"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
+github "java",            "1.2.0"
 github "iterm2",          "1.0.6"
 github "wget",            "1.0.0"
 github "clojure",         "1.2.0"
