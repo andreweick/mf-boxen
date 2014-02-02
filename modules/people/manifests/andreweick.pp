@@ -110,4 +110,6 @@ class people::andreweick {
   }
 
   osx::recovery_message { 'If this laptop found, please contact business@missionfocus.com or call 703.291.6720': }
+  osx::keyboard::capslock_to_control
+  osx::finder::empty_trash_securely
 }
