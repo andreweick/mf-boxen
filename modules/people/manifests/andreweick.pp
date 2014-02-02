@@ -8,6 +8,8 @@ class people::andreweick {
   include vmware_fusion
   include textexpander
   include mactex::full
+  include osx::keyboard::capslock_to_control
+  include osx::finder::empty_trash_securely
 
   include hub
 
@@ -62,8 +64,7 @@ class people::andreweick {
 
   package { 'GPGTools':
     source    => 'https://github.com/downloads/GPGTools/GPGTools/GPGTools-20120318.dmg',
-    projects  => 'appdmg'
-
+    provider  => 'appdmg'
   }
 
   git::config::global { 
@@ -110,6 +111,25 @@ class people::andreweick {
   }
 
   osx::recovery_message { 'If this laptop found, please contact business@missionfocus.com or call 703.291.6720': }
-  osx::keyboard::capslock_to_control
-  osx::finder::empty_trash_securely
+
+  repository { "${projects}/aedc2":
+    source  => "andreweick/aedc2"
+  }
+
+  repository { "${projects}/mf-boxen":
+    source  => "andreweick/mf-boxen"
+  }
+
+  repository { "${projects}/aedc":
+    source  => "andreweick/aedc"
+  }
+
+  repository { "${projects}/imageprep":
+    source  => "andreweick/imageprep"
+  }
+
+  repository { "${projects}/puppet-font":
+    source  => "andreweick/puppet-font"
+  }
+
 }
