@@ -60,6 +60,12 @@ class people::andreweick {
     provider  => pkgdmg,
   }
 
+  package { 'GPGTools':
+    source    => 'https://github.com/downloads/GPGTools/GPGTools/GPGTools-20120318.dmg',
+    projects  => 'appdmg'
+
+  }
+
   git::config::global { 
     'user.email':
       value => 'maeick@missionfocus.com';
