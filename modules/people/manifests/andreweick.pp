@@ -132,4 +132,11 @@ class people::andreweick {
     source  => "andreweick/puppet-font"
   }
 
+  repository { "${projects}/missionfocus":
+    source  => "imintel/missionfocus"
+  }
+
+  repository { "${projects}/imi":
+    source  => "andreweick/imi"
+  }
 }
