@@ -57,6 +57,13 @@ class people::andreweick {
     require => Homebrew::Tap['sitespeedio/sitespeedio','tobli/browsertime'],
   } 
 
+  # Install linode cli
+  homebrew::tap { 'linode/cli': }
+  package { "linode-cli":
+    ensure => present,
+    require => Homebrew::Tap['linode/cli'],
+  } 
+
   package { 'Pandoc':
     source    => 'https://pandoc.googlecode.com/files/pandoc-1.12.1-1.dmg',
     provider  => pkgdmg,
