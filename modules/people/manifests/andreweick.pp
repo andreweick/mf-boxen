@@ -52,8 +52,7 @@ class people::andreweick {
   homebrew::tap { 'tobli/browsertime': }
   package { "sitespeed.io":
     ensure => present,
-    require => Homebrew::Tap['sitespeedio/sitespeedio'],
-    require => Homebrew::Tap['tobli/browsertime'],
+    require => Homebrew::Tap['sitespeedio/sitespeedio','tobli/browsertime'],
   } 
 
   package { 'Pandoc':
