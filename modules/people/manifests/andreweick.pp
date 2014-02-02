@@ -4,6 +4,7 @@ class people::andreweick {
   include chrome
   include alfred
   include font::source-code-pro
+  include java
   include vmware_fusion
   include textexpander
   include mactex::full
@@ -24,7 +25,7 @@ class people::andreweick {
   }
 
   sublime_text_3::package { 'MarkdownEditing':
-    source => 'SublimText-Markdown/MarkdownEditing'
+    source => 'SublimeText-Markdown/MarkdownEditing'
   }
 
   sublime_text_3::package { 'open-url':
@@ -41,12 +42,19 @@ class people::andreweick {
     'curl',
     'nmap',
     'zsh',
-    'sitespeedio/sitespeedio/sitespeed.io',
     'imagemagick'    
   ]
 
   package { $hombrew_packages: }
 
+  # Install sitespeed.io
+  homebrew::tap { 'sitespeedio/sitespeedio': }
+  homebrew::tap { 'tobli/browsertime': }
+  package { "sitespeed.io":
+    ensure => present,
+    require => Homebrew::Tap['sitespeedio/sitespeedio'],
+    require => Homebrew::Tap['tobli/browsertime'],
+  } 
 
   package { 'Pandoc':
     source    => 'https://pandoc.googlecode.com/files/pandoc-1.12.1-1.dmg',
