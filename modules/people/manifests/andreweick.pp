@@ -14,7 +14,7 @@ class people::andreweick {
   include hub
 
   include iterm2::stable
-# include iterm2::colors::solarized_light
+  include iterm2::colors::solarized_light
 
   include sublime_text_3
   include sublime_text_3::package_control
