@@ -38,6 +38,12 @@ class people::andreweick {
     source => 'vkocubinsky/SublimeTableEditor'
   }
 
+  # install package named "Theme - Soda" from GitHub repository
+  # will be stored in "Packages/Theme - Soda"
+  sublime_text_3::package { 'Theme - Soda':
+    source => 'buymeasoda/soda-theme/'
+  }
+
   $hombrew_packages = [
     'ack',
     'wget',
