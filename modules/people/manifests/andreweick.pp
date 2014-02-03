@@ -172,4 +172,20 @@ class people::andreweick {
     source    => 'http://files.stairways.com/keyboardmaestro-632.zip',
     provider  => 'compressed_app',
   }
+
+  package { 'OmniGraffle':
+    source    => 'http://www.omnigroup.com/download/latest/omnigraffle',
+    provider  => 'appdmg_eula',
+  }
+
+  package { 'OmniPlan':
+    source    => 'http://www.omnigroup.com/download/latest/omniplan',
+    provider  => 'appdmg_eula',
+  }
+
+  package { 'OmniOutliner':
+    source    => 'http://www.omnigroup.com/download/latest/omnioutliner',
+    provider  => 'appdmg_eula',
+  }
+
 }
