@@ -40,8 +40,8 @@ class people::andreweick {
 
   # install package named "Theme - Soda" from GitHub repository
   # will be stored in "Packages/Theme - Soda"
-  sublime_text_3::package { 'Theme%20-%20Soda':
-    source => 'buymeasoda/soda-theme/'
+  sublime_text_3::package { 'Theme - Soda':
+    source => 'buymeasoda/soda-theme'
   }
 
   $hombrew_packages = [
@@ -152,4 +152,24 @@ class people::andreweick {
   repository { "${projects}/imi":
     source  => "andreweick/imi"
   }
+
+  # package { 'MailMate':
+  #   source    => "http://download.mailmate-app.com/",
+  #   provider  => compressed_app,
+  # }
+
+  # package { 'Transmit':
+  #   source    => "http://www.panic.com/transmit/d/Transmit%204.4.5.zip",
+  #   provider  => compressed_app,
+  # }
+
+  # package { 'SuperDuper':
+  #   source    => "http://www.shirt-pocket.com/mint/pepper/orderedlist/downloads/download.php?file=http%3A//www.shirt-pocket.com/downloads/SuperDuper%21.dmg",
+  #   provider  => appdmg,
+  # }
+
+  # package { 'Keyboard Maestro':
+  #   source    => "http://www.keyboardmaestro.com/action/download?km-kmi-2-b3",
+  #   provider  => compressed_app,
+  # }
 }
