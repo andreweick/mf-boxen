@@ -51,6 +51,7 @@ class people::andreweick {
     'curl',
     'nmap',
     'zsh',
+    'tig',
     'imagemagick'    
   ]
 
