@@ -59,6 +59,7 @@ github "module-data","0.0.1", :repo => "ripienaar/puppet-module-data"
 github "java",            "1.2.0"
 github "iterm2",          "1.0.6"
 github "wget",            "1.0.0"
+github "python",          "1.1.1"
 github "clojure",         "1.2.0"
 
 github "intellij",        "1.4.0"
