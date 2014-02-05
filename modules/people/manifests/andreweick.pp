@@ -178,6 +178,11 @@ class people::andreweick {
     provider  => 'compressed_app',
   }
 
+  package { 'Bartender':
+    source    => 'http://www.macbartender.com/Demo/Bartender.zip',
+    provider  => 'compressed_app'
+  }
+
   # package { 'OmniGraffle':
   #   source    => 'http://www.omnigroup.com/download/latest/omnigraffle',
   #   provider  => 'appdmg_eula',
