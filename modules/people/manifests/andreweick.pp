@@ -7,7 +7,7 @@ class people::andreweick {
   include java
   include vmware_fusion
   include textexpander
-  include mactex::full
+  include mactex::basic
 
   include python
   # python::pip { 'speedtest-cli': }
