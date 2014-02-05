@@ -5,14 +5,18 @@ class people::andreweick {
   include alfred
   include font::source-code-pro
   include java
-  includ python
   include vmware_fusion
   include textexpander
   include mactex::full
+
+  include python
+  # python::pip { 'speedtest-cli': }
+
   include osx::keyboard::capslock_to_control
   include osx::finder::empty_trash_securely
 
   include hub
+  hub::alias_hub_to_git = false
 
   include iterm2::stable
   include iterm2::colors::solarized_light
