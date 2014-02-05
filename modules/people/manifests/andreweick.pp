@@ -16,7 +16,6 @@ class people::andreweick {
   include osx::finder::empty_trash_securely
 
   include hub
-  hub::alias_hub_to_git = false
 
   include iterm2::stable
   include iterm2::colors::solarized_light
