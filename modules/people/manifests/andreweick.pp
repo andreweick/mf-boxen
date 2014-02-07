@@ -98,6 +98,22 @@ class people::andreweick {
       value => 'Andrew Eick';
     'push.default':
       value => 'matching';
+    'difftool.cmd':
+      value => 'cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"';
+    'diff.tool': 
+      value => 'Kaleidoscope';
+    'difftool.prompt':
+      value => 'false';
+    'mergetool.cmd':
+      value => 'cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot';
+    'mergetool.trustExitCode':
+      value => 'true';
+    'mergetool.prompt':
+      value => 'false';
+    'merge.tool':
+      value => 'Kaleidoscope'
+    'alias.ksreview':
+      value => '"!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"'
   }
 
 
