@@ -1,3 +1,4 @@
+github "font",            "0.0.1",  :repo => "andreweick/puppet-font"
 class people::andreweick {
   include gitx
   include dropbox
