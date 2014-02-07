@@ -183,6 +183,11 @@ class people::andreweick {
     provider  => 'compressed_app'
   }
 
+  ruby::gem{ 'dasheets':
+    gem       => dasheets,
+    ruby      => '1.9.3'
+  }
+
   # package { 'OmniGraffle':
   #   source    => 'http://www.omnigroup.com/download/latest/omnigraffle',
   #   provider  => 'appdmg_eula',
