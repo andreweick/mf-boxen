@@ -111,9 +111,9 @@ class people::andreweick {
     'mergetool.prompt':
       value => 'false';
     'merge.tool':
-      value => 'Kaleidoscope'
+      value => 'Kaleidoscope';
     'alias.ksreview':
-      value => '"!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"'
+      value => '"!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"';
   }
 
 
