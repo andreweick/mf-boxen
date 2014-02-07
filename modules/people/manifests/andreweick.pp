@@ -85,6 +85,12 @@ class people::andreweick {
     provider  => 'appdmg'
   }
 
+  # ruby::gem{ 'dasheets':
+  #   gem       => dasheets,
+  #   ruby      => '1.9.3'
+  # }
+
+
   git::config::global { 
     'user.email':
       value => 'maeick@missionfocus.com';
@@ -181,11 +187,6 @@ class people::andreweick {
   package { 'Bartender':
     source    => 'http://www.macbartender.com/Demo/Bartender.zip',
     provider  => 'compressed_app'
-  }
-
-  ruby::gem{ 'dasheets':
-    gem       => dasheets,
-    ruby      => '1.9.3'
   }
 
   # package { 'OmniGraffle':
