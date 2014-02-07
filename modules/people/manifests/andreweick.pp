@@ -75,6 +75,7 @@ class people::andreweick {
     require => Homebrew::Tap['linode/cli'],
   } 
 
+  # for pdflatex
   package { 'Pandoc':
     source    => 'https://pandoc.googlecode.com/files/pandoc-1.12.1-1.dmg',
     provider  => pkgdmg,
@@ -85,10 +86,12 @@ class people::andreweick {
     provider  => 'appdmg'
   }
 
-  # ruby::gem{ 'dasheets':
-  #   gem       => dasheets,
-  #   ruby      => '1.9.3'
-  # }
+  # [Galileo](http://jacksongariety.github.io/Galileo)
+  # Search your starred GitHub repos from the shell 
+  ruby::gem{ 'Galileo':
+    gem       => galileo,
+    ruby      => '1.9.3'
+  }
 
 
   git::config::global { 
