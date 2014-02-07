@@ -1,14 +1,1 @@
 .DS_Store
-/.bundle
-/.librarian
-/.projects
-/.snapshot
-/.tmp
-/bin
-/config/local.rb
-/log
-/tmp
-/shared/*
-!/shared/README.md
-/vendor/gems/
-/vendor/puppet/cache
