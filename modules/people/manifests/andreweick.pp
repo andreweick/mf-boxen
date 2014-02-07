@@ -8,6 +8,7 @@ class people::andreweick {
   include vmware_fusion
   include textexpander
   include mactex::basic
+  include kaleidoscope
 
   include python
   # python::pip { 'speedtest-cli': }
