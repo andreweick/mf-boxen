@@ -87,12 +87,12 @@ class people::andreweick {
     provider  => 'appdmg'
   }
 
-  # [Galileo](http://jacksongariety.github.io/Galileo)
-  # Search your starred GitHub repos from the shell 
-  ruby::gem{ 'Galileo':
-    gem       => galileo,
-    ruby      => '1.9.3'
-  }
+  # # [Galileo](http://jacksongariety.github.io/Galileo)
+  # # Search your starred GitHub repos from the shell 
+  # ruby::gem{ 'Galileo':
+  #   gem       => galileo,
+  #   ruby      => '1.9.3'
+  # }
 
 
   git::config::global { 
