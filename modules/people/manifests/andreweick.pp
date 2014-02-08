@@ -4,6 +4,7 @@ class people::andreweick {
   include chrome
   include alfred
   include font::source-code-pro
+  include font::sketchnote
   include java
   include vmware_fusion
   include textexpander
@@ -87,12 +88,12 @@ class people::andreweick {
     provider  => 'appdmg'
   }
 
-  # # [Galileo](http://jacksongariety.github.io/Galileo)
-  # # Search your starred GitHub repos from the shell 
-  # ruby::gem{ 'Galileo':
-  #   gem       => galileo,
-  #   ruby      => '1.9.3'
-  # }
+  # [Galileo](http://jacksongariety.github.io/Galileo)
+  # Search your starred GitHub repos from the shell 
+  ruby::gem{ 'Galileo':
+    gem       => galileo,
+    ruby      => '2.0.0-p353'
+  }
 
 
   git::config::global { 
