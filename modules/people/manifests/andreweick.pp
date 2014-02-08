@@ -210,6 +210,11 @@ class people::andreweick {
     provider  => 'compressed_app'
   }
 
+  package { 'Fluid app':
+    source    => 'http://fluidapp.com/dist/Fluid_1.7.2.zip',
+    provider  => 'compressed_app'
+  }
+
   # package { 'OmniGraffle':
   #   source    => 'http://www.omnigroup.com/download/latest/omnigraffle',
   #   provider  => 'appdmg_eula',
