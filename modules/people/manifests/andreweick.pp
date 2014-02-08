@@ -88,13 +88,18 @@ class people::andreweick {
     provider  => 'appdmg'
   }
 
+  # # [Quicklook markdown for preview](https://github.com/toland/qlmarkdown)
+  # package { 'QLMarkdown':
+  #   source    => 'https://github.com/downloads/toland/qlmarkdown/QLMarkdown-1.3.zip',
+  #   provider  =>
+  # }
+
   # [Galileo](http://jacksongariety.github.io/Galileo)
   # Search your starred GitHub repos from the shell 
   ruby::gem{ 'Galileo':
     gem       => galileo,
     ruby      => '2.0.0-p353'
   }
-
 
   git::config::global { 
     'user.email':
@@ -212,6 +217,11 @@ class people::andreweick {
 
   package { 'Fluid app':
     source    => 'http://fluidapp.com/dist/Fluid_1.7.2.zip',
+    provider  => 'compressed_app'
+  }
+
+  package { 'BetterZip':
+    source    => 'http://macitbetter.com/BetterZip.zip',
     provider  => 'compressed_app'
   }
 
