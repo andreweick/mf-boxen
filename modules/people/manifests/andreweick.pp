@@ -12,7 +12,6 @@ class people::andreweick {
   include kaleidoscope
 
   include python
-  # python::pip { 'speedtest-cli': }
 
   include osx::keyboard::capslock_to_control
   include osx::finder::empty_trash_securely
@@ -77,6 +76,10 @@ class people::andreweick {
     require => Homebrew::Tap['linode/cli'],
   } 
 
+  exec { 'install speedtest-cli':
+    command => 'easy_install speedtest-cli',
+    require python,
+  }
   # for pdflatex
   package { 'Pandoc':
     source    => 'https://pandoc.googlecode.com/files/pandoc-1.12.1-1.dmg',
