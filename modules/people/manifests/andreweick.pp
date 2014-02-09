@@ -111,13 +111,13 @@ class people::andreweick {
     'push.default':
       value => 'matching';
     'difftool.cmd':
-      value => 'cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"';
+      value => 'ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"';
     'diff.tool': 
       value => 'Kaleidoscope';
     'difftool.prompt':
       value => 'false';
     'mergetool.cmd':
-      value => 'cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot';
+      value => 'ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot';
     'mergetool.trustExitCode':
       value => 'true';
     'mergetool.prompt':

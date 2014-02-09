@@ -106,5 +106,5 @@ node default {
   ruby::version { '1.8.7': }
   ruby::version { '1.9.2': }
   ruby::version { '1.9.3': }
-  ruby::version { '2.0.0': }
+  ruby::version { '2.0.0-p353': }
 }
