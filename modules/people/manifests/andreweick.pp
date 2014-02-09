@@ -110,13 +110,13 @@ class people::andreweick {
       value => 'Andrew Eick';
     'push.default':
       value => 'matching';
-    'difftool.cmd':
+    'difftool "Kaleidoscope".cmd':
       value => 'ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"';
     'diff.tool': 
       value => 'Kaleidoscope';
     'difftool.prompt':
       value => 'false';
-    'mergetool.cmd':
+    'mergetool "Kaleidoscope".cmd':
       value => 'ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot';
     'mergetool.trustExitCode':
       value => 'true';
