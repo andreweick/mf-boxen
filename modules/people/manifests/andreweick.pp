@@ -78,7 +78,6 @@ class people::andreweick {
 
   exec { 'install speedtest-cli':
     command => 'easy_install speedtest-cli',
-    require python,
   }
   # for pdflatex
   package { 'Pandoc':
