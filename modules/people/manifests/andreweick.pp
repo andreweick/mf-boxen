@@ -231,10 +231,10 @@ class people::andreweick {
     provider  => 'compressed_app'
   }
 
-  package { 'Hazel':
-    source    => 'https://s3.amazonaws.com/Noodlesoft/Hazel-3.2.4.dmg',
-    provider  => 'appdmg_eula'
-  }
+  # package { 'Hazel':
+  #   source    => 'https://s3.amazonaws.com/Noodlesoft/Hazel-3.2.4.dmg',
+  #   provider  => 'appdmg_eula'
+  # }
 
   # package { 'OmniGraffle':
   #   source    => 'http://www.omnigroup.com/download/latest/omnigraffle',
