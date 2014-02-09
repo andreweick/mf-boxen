@@ -3,8 +3,6 @@ class people::andreweick {
   include dropbox
   include chrome
   include alfred
-  include font::source-code-pro
-  include font::sketchnote
   include java
   include vmware_fusion
   include textexpander
@@ -20,6 +18,12 @@ class people::andreweick {
 
   include iterm2::stable
   include iterm2::colors::solarized_light
+
+  include font::source-code-pro
+  include font::sketchnote
+  include font::hoefler
+  include font::comicbookfonts
+  include font::myfonts
 
   include sublime_text_3
   include sublime_text_3::package_control
