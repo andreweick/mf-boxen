@@ -61,6 +61,7 @@ class people::andreweick {
     'nmap',
     'zsh',
     'tig',
+    'ffmpeg',
     'imagemagick'    
   ]
 
