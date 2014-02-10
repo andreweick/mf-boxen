@@ -7,6 +7,7 @@ class people::andreweick {
   include vmware_fusion
   include textexpander
   include mactex::basic
+  include hazel
   include kaleidoscope
 
   include python
@@ -230,11 +231,6 @@ class people::andreweick {
     source    => 'http://macitbetter.com/BetterZip.zip',
     provider  => 'compressed_app'
   }
-
-  # package { 'Hazel':
-  #   source    => 'https://s3.amazonaws.com/Noodlesoft/Hazel-3.2.4.dmg',
-  #   provider  => 'appdmg_eula'
-  # }
 
   # package { 'OmniGraffle':
   #   source    => 'http://www.omnigroup.com/download/latest/omnigraffle',
