@@ -232,19 +232,18 @@ class people::andreweick {
     provider  => 'compressed_app'
   }
 
-  # package { 'OmniGraffle':
-  #   source    => 'http://www.omnigroup.com/download/latest/omnigraffle',
-  #   provider  => 'appdmg_eula',
-  # }
+  package { 'OmniGraffle':
+    source    => 'http://downloads2.omnigroup.com/software/MacOSX/10.8/OmniGraffle-6.0.4.dmg',
+    provider  => 'appdmg_eula',
+  }
 
-  # package { 'OmniPlan':
-  #   source    => 'http://www.omnigroup.com/download/latest/omniplan',
-  #   provider  => 'appdmg_eula',
-  # }
+  package { 'OmniPlan':
+    source    => 'http://downloads2.omnigroup.com/software/MacOSX/10.8/OmniPlan-2.3.3.dmg',
+    provider  => 'appdmg_eula',
+  }
 
-  # package { 'OmniOutliner':
-  #   source    => 'http://www.omnigroup.com/download/latest/omnioutliner',
-  #   provider  => 'appdmg_eula',
-  # }
-
+  package { 'OmniOutliner':
+    source    => 'http://downloads2.omnigroup.com/software/MacOSX/10.9/OmniOutliner-4.0.2.dmg',
+    provider  => 'appdmg_eula',
+  }
 }
