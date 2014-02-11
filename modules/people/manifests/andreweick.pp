@@ -7,7 +7,6 @@ class people::andreweick {
   include vmware_fusion
   include textexpander
   include mactex::basic
-  include hazel
   include kaleidoscope
 
   include python
