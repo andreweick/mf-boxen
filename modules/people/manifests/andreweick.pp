@@ -35,6 +35,10 @@ class people::andreweick {
     source => 'aziz/PlainTasks'
   }
 
+  sublime_text_3::package { 'MarkedApp':
+    source => 'icio/sublime-text-marked'
+  }
+
   sublime_text_3::package { 'MarkdownEditing':
     source => 'SublimeText-Markdown/MarkdownEditing'
   }
