@@ -252,4 +252,9 @@ class people::andreweick {
     source    => 'http://marked2app.com/download/Marked.zip',
     provider  => 'compressed_app',
   }
+
+  package { 'Pathfinder':
+    source    => 'http://get.cocoatech.com/PF6_LION.zip',
+    provider  => 'compressed_app',
+  }
 }
