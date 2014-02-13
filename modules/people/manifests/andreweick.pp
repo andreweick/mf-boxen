@@ -55,6 +55,7 @@ class people::andreweick {
 
   $hombrew_packages = [
     'ack',
+    's3cmd',
     'wget',
     'curl',
     'nmap',
@@ -245,5 +246,10 @@ class people::andreweick {
   package { 'OmniOutliner':
     source    => 'http://downloads2.omnigroup.com/software/MacOSX/10.9/OmniOutliner-4.0.2.dmg',
     provider  => 'appdmg_eula',
+  }
+
+  package { 'Marked2':
+    source    => 'http://marked2app.com/download/Marked.zip',
+    provider  => 'compressed_app',
   }
 }
