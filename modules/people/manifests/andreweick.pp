@@ -35,6 +35,10 @@ class people::andreweick {
     source => 'aziz/PlainTasks'
   }
 
+  sublime_text_3::package { 'MarkedApp':
+    source => 'icio/sublime-text-marked'
+  }
+
   sublime_text_3::package { 'MarkdownEditing':
     source => 'SublimeText-Markdown/MarkdownEditing'
   }
@@ -55,11 +59,13 @@ class people::andreweick {
 
   $hombrew_packages = [
     'ack',
+    's3cmd',
     'wget',
     'curl',
     'nmap',
     'zsh',
     'tig',
+    'ffmpeg',
     'imagemagick'    
   ]
 
@@ -241,24 +247,28 @@ class people::andreweick {
     provider  => 'compressed_app'
   }
 
-  # package { 'Hazel':
-  #   source    => 'https://s3.amazonaws.com/Noodlesoft/Hazel-3.2.4.dmg',
-  #   provider  => 'appdmg_eula'
-  # }
+  package { 'OmniGraffle':
+    source    => 'http://downloads2.omnigroup.com/software/MacOSX/10.8/OmniGraffle-6.0.4.dmg',
+    provider  => 'appdmg_eula',
+  }
 
-  # package { 'OmniGraffle':
-  #   source    => 'http://www.omnigroup.com/download/latest/omnigraffle',
-  #   provider  => 'appdmg_eula',
-  # }
+  package { 'OmniPlan':
+    source    => 'http://downloads2.omnigroup.com/software/MacOSX/10.8/OmniPlan-2.3.3.dmg',
+    provider  => 'appdmg_eula',
+  }
 
-  # package { 'OmniPlan':
-  #   source    => 'http://www.omnigroup.com/download/latest/omniplan',
-  #   provider  => 'appdmg_eula',
-  # }
+  package { 'OmniOutliner':
+    source    => 'http://downloads2.omnigroup.com/software/MacOSX/10.9/OmniOutliner-4.0.2.dmg',
+    provider  => 'appdmg_eula',
+  }
 
-  # package { 'OmniOutliner':
-  #   source    => 'http://www.omnigroup.com/download/latest/omnioutliner',
-  #   provider  => 'appdmg_eula',
-  # }
+  package { 'Marked2':
+    source    => 'http://marked2app.com/download/Marked.zip',
+    provider  => 'compressed_app',
+  }
 
+  package { 'Pathfinder':
+    source    => 'http://get.cocoatech.com/PF6_LION.zip',
+    provider  => 'compressed_app',
+  }
 }
