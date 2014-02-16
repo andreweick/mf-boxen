@@ -8,7 +8,6 @@ class people::andreweick {
   include textexpander
   include mactex::basic
   include kaleidoscope
-
   include python
 
   include osx::keyboard::capslock_to_control
@@ -270,5 +269,10 @@ class people::andreweick {
   package { 'Pathfinder':
     source    => 'http://get.cocoatech.com/PF6_LION.zip',
     provider  => 'compressed_app',
+  }
+
+  package { 'iStatMenus4':
+    source    => 'http://s3.amazonaws.com/bjango/files/istatmenus4/istatmenus4.20.zip'
+    provider  => 'compressed_app'
   }
 }
