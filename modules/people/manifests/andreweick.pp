@@ -272,7 +272,7 @@ class people::andreweick {
   }
 
   package { 'iStatMenus4':
-    source    => 'http://s3.amazonaws.com/bjango/files/istatmenus4/istatmenus4.20.zip'
-    provider  => 'compressed_app'
+    source    => 'http://s3.amazonaws.com/bjango/files/istatmenus4/istatmenus4.20.zip',
+    provider  => 'compressed_app',
   }
 }
