@@ -65,6 +65,7 @@ class people::andreweick {
 
   package { $hombrew_packages: }
 
+  # Install homebrew packages from different casks
   # Install sitespeed.io
   homebrew::tap { 'sitespeedio/sitespeedio': }
   homebrew::tap { 'tobli/browsertime': }
@@ -100,12 +101,21 @@ class people::andreweick {
   #   provider  =>
   # }
 
+  ## Ruby Gems
   # [Galileo](http://jacksongariety.github.io/Galileo)
   # Search your starred GitHub repos from the shell 
   ruby::gem{ 'Galileo':
     gem       => galileo,
     ruby      => '2.0.0-p353'
   }
+
+  # [git-smart](http://github.com/geelen/git-smart)
+  # Smart actions for git (smart-pull, smart-merge,...)
+  ruby::gem{ 'git-smart':
+    gem       => git-smart,
+    ruby      => '2.0.0-p353'
+  }
+
 
   git::config::global { 
     'user.email':
