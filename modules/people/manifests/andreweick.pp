@@ -170,6 +170,7 @@ class people::andreweick {
 
   osx::recovery_message { 'If this laptop found, please contact business@missionfocus.com or call 703.291.6720': }
 
+  # Clone my repos off github
   repository { "${projects}/aedc2":
     source  => "andreweick/aedc2"
   }
@@ -190,13 +191,26 @@ class people::andreweick {
     source  => "andreweick/puppet-font"
   }
 
+  # MF website
   repository { "${projects}/missionfocus":
     source  => "imintel/missionfocus"
   }
 
+  # IMI Jekyll website
   repository { "${projects}/imi":
     source  => "andreweick/imi"
   }
+
+  # Resume
+  repository { "${projects}/cv":
+    source  => "andreweick/cv"
+  }
+
+  # Cheat sheet
+  repository { "${projects}/cribs":
+    source  => "andreweick/cribs"
+  }
+
 
   package { 'Transmit':
     source    => 'http://www.panic.com/transmit/d/Transmit%204.4.5.zip',
