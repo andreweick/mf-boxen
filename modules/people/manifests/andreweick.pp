@@ -8,7 +8,6 @@ class people::andreweick {
   include textexpander
   include mactex::basic
   include kaleidoscope
-
   include python
 
   include osx::keyboard::capslock_to_control
@@ -33,6 +32,10 @@ class people::andreweick {
 
   sublime_text_3::package { 'PlainTasks':
     source => 'aziz/PlainTasks'
+  }
+
+  sublime_text_3::package { 'MarkedApp':
+    source => 'icio/sublime-text-marked'
   }
 
   sublime_text_3::package { 'MarkdownEditing':
@@ -67,6 +70,7 @@ class people::andreweick {
 
   package { $hombrew_packages: }
 
+  # Install homebrew packages from different casks
   # Install sitespeed.io
   homebrew::tap { 'sitespeedio/sitespeedio': }
   homebrew::tap { 'tobli/browsertime': }
@@ -102,12 +106,21 @@ class people::andreweick {
   #   provider  =>
   # }
 
+  ## Ruby Gems
   # [Galileo](http://jacksongariety.github.io/Galileo)
   # Search your starred GitHub repos from the shell 
   ruby::gem{ 'Galileo':
     gem       => galileo,
     ruby      => '2.0.0-p353'
   }
+
+  # [git-smart](http://github.com/geelen/git-smart)
+  # Smart actions for git (smart-pull, smart-merge,...)
+  ruby::gem{ 'git-smart':
+    gem       => git-smart,
+    ruby      => '2.0.0-p353'
+  }
+
 
   git::config::global { 
     'user.email':
@@ -264,6 +277,16 @@ class people::andreweick {
 
   package { 'Marked2':
     source    => 'http://marked2app.com/download/Marked.zip',
+    provider  => 'compressed_app',
+  }
+
+  package { 'Pathfinder':
+    source    => 'http://get.cocoatech.com/PF6_LION.zip',
+    provider  => 'compressed_app',
+  }
+
+  package { 'iStatMenus4':
+    source    => 'http://s3.amazonaws.com/bjango/files/istatmenus4/istatmenus4.20.zip',
     provider  => 'compressed_app',
   }
 }
