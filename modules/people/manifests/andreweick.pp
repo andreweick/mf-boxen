@@ -50,6 +50,10 @@ class people::andreweick {
     source => 'vkocubinsky/SublimeTableEditor'
   }
 
+  sublime_text_3::package { 'SublimePrettyJson':
+    source => 'dzhibas/SublimePrettyJson'
+  }
+
   # install package named "Theme - Soda" from GitHub repository
   # will be stored in "Packages/Theme - Soda"
   sublime_text_3::package { 'Theme - Soda':
