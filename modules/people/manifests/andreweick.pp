@@ -69,6 +69,7 @@ class people::andreweick {
     'nmap',
     'zsh',
     'tig',
+    'exiftool',
     'ffmpeg',
     'imagemagick'    
   ]
