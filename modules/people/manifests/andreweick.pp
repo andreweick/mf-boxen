@@ -23,6 +23,7 @@ class people::andreweick {
   include font::hoefler
   include font::comicbookfonts
   include font::myfonts
+  include font::clear-sans
 
   include sublime_text_3
   include sublime_text_3::package_control
