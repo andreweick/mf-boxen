@@ -127,6 +127,19 @@ class people::andreweick {
     ruby      => '2.0.0-p353'
   }
 
+  # [rubocop](http://github.com/bbatsov/rubocop)
+  # Static Ruby code analyzer
+  ruby::gem{ 'rubocop':
+    gem       => rubocop,
+    ruby      => '2.0.0-p353'
+  }
+
+  # [hologram](http://github.com/trulia/hologram)
+  # Parses comments in CSS and makes a style guide
+  ruby::gem{ 'hologram':
+    gem       => hologram,
+    ruby      => '2.0.0-p353'
+  }
 
   git::config::global { 
     'user.email':
