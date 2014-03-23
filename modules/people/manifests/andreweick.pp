@@ -19,11 +19,11 @@ class people::andreweick {
   include iterm2::colors::solarized_light
 
   include font::source-code-pro
-  include font::sketchnote
-  include font::hoefler
-  include font::comicbookfonts
-  include font::myfonts
-  include font::clear-sans
+  # include font::sketchnote
+  # include font::hoefler
+  # include font::comicbookfonts
+  # include font::myfonts
+  # include font::clear-sans
 
   include sublime_text_3
   include sublime_text_3::package_control
