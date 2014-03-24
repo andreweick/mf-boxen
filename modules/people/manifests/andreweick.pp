@@ -21,7 +21,7 @@ class people::andreweick {
   include font::source-code-pro
   include font::clear-sans
 
-  include FontPrivate::sketchnote
+  # include FontPrivate::sketchnote
   # include FontPrivate::hoefler
   # include FontPrivate::comicbookfonts
   # include FontPrivate::myfonts
