@@ -21,10 +21,10 @@ class people::andreweick {
   include font::source-code-pro
   include font::clear-sans
 
-  # include font::sketchnote
-  # include font::hoefler
-  # include font::comicbookfonts
-  # include font::myfonts
+  include FontPrivate::sketchnote
+  include FontPrivate::hoefler
+  include FontPrivate::comicbookfonts
+  include FontPrivate::myfonts
 
   include sublime_text_3
   include sublime_text_3::package_control
