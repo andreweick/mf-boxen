@@ -19,11 +19,12 @@ class people::andreweick {
   include iterm2::colors::solarized_light
 
   include font::source-code-pro
-  include font::sketchnote
-  include font::hoefler
-  include font::comicbookfonts
-  include font::myfonts
   include font::clear-sans
+
+  include font_private::sketchnote
+  # include font_private::hoefler
+  # include font_private::comicbookfonts
+  # include font_private::myfonts
 
   include sublime_text_3
   include sublime_text_3::package_control
@@ -69,6 +70,7 @@ class people::andreweick {
     'nmap',
     'zsh',
     'tig',
+    'exiftool',
     'ffmpeg',
     'imagemagick'    
   ]
@@ -126,6 +128,19 @@ class people::andreweick {
     ruby      => '2.0.0-p353'
   }
 
+  # [rubocop](http://github.com/bbatsov/rubocop)
+  # Static Ruby code analyzer
+  ruby::gem{ 'rubocop':
+    gem       => rubocop,
+    ruby      => '2.0.0-p353'
+  }
+
+  # [hologram](http://github.com/trulia/hologram)
+  # Parses comments in CSS and makes a style guide
+  ruby::gem{ 'hologram':
+    gem       => hologram,
+    ruby      => '2.0.0-p353'
+  }
 
   git::config::global { 
     'user.email':
